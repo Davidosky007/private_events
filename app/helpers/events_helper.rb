@@ -1,6 +1,6 @@
 module EventsHelper
   def event_form
-    render 'form' if logged_in?
+    render 'form' unless !logged_in?
   end
 
   def button(event)

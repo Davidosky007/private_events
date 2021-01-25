@@ -10,7 +10,7 @@
          <% @upcoming_events.each do |event| %>
            <div class="p-3 mb-1" style="background-color:lavender;">
              <div class="d-flex justify-content-between">
-               <h4><%= link_to "#{event.title}", event, class: "text-dark" %></h4>
+               <h4 class="text-dark"><%= link_to "#{event.title}", event, class: "text-dark" %></h4>
           <div class="text-info"><%= event.event_date %></div>
         </div>
         <div><%= event.description %></div>
@@ -24,7 +24,7 @@
     <% @previous_events.each do |event| %>
       <div class="p-3 mb-1" style="background-color:lavender;">
         <div class="d-flex justify-content-between">
-          <h4><%= link_to "#{event.title}", event, class: "text-dark" %></h4>
+          <h4 class="text-dark"><%= link_to "#{event.title}", event, class: "text-dark" %></h4>
           <div class="text-info"><%= event.event_date %></div>
         </div>
         <div><%= event.description %></div>

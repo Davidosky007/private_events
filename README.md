@@ -2,18 +2,18 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h1 align="center"> Private Events</h1>
+  <h1 align="center">Private Events</h1>
   <p align="center">
     This is a Microverse Ruby or rails project that is done to create a rails app that allows users to create events, attend events, remove attendance and see who is attending an event. It also has a login and sign up system to control access.
     <br />
-    <a href="https://github.com/Davidosky007/Members-only"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Davidosky007/private_events"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Davidosky007/private-events">View Demo</a>
+    <a href="https://github.com/Davidosky007/private_events">View Demo</a>
     ·
-    <a href="https://github.com/Davidosky007/private-eventsy/issues">Report Bug</a>
+    <a href="https://github.com/Davidosky007/private_events/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Davidosky007/private-events/issues">Request Feature</a>
+    <a href="https://github.com/Davidosky007/private_events/issues">Request Feature</a>
   </p>
 </p>
 
@@ -77,13 +77,13 @@ Now you can test directly in the browser!!
 
 ## Roadmap
 
-See the [open issues](https://github.com/Davidosky007/private-events/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/Davidosky007/private_events/issues) for a list of proposed features (and known issues).
 
 ## Contact
 
 <p align="center">
 
-  Project Link: [https://github.com/Davidosky007/private-events]
+  Project Link: [https://github.com/Davidosky007/private_events]
 
 <p align="center">
 

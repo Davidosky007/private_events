@@ -1,0 +1,5 @@
+<%= simple_form_for @event_attendance do |f| %>
+  <%= f.hidden_field :attendee_id, :value => current_user.id %>
+  <%= f.hidden_field :event_attended_id, :value => event.id %>
+  <%= f.button :submit, "Attend", class: "btn-success float-right mt-2" %>
+<% end %>

@@ -1,0 +1,16 @@
+<main class="d-flex justify-content-center">
+    <h4 class="text-center mb-3">Login</h4>
+    <%= form_tag sessions_path, {:class => 'form-input form-i-2' } do %>
+      <%= alert_error %>
+      <div class='input-field'>
+        <div class="labels">
+          <label>
+            Username : 
+          </label>
+        </div>
+        <%= text_field_tag(:username, '', class: 'inputbox', placeholder: 'Please enter your username' ) %>
+      </div>
+      <%= submit_tag 'Submit', :class => 'btn btn-success btn-block mb-3 mt-3' %>
+      <button type="button" onclick="location.href = 'signup';" class="btn btn-secondary btn-block mb-2" >Sign Up</button>
+    <% end %>
+</main>

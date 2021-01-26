@@ -1,9 +1,6 @@
 module EventsHelper
   def event_form
-    rubocop :disable
-    return unless logged_in?
-
-    render 'form'
+    render 'form' if logged_in?
   end
 
   def button(event)

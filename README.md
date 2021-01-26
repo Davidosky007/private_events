@@ -9,7 +9,7 @@
     <a href="https://github.com/Davidosky007/private_events"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Davidosky007/private_events">View Demo</a>
+    <!-- <a href="https://github.com/Davidosky007/private_events">View Demo</a> -->
     ·
     <a href="https://github.com/Davidosky007/private_events/issues">Report Bug</a>
     ·

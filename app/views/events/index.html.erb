@@ -1,0 +1,39 @@
+<p id='notice'><%= notice %></p>
+<div class="container mt-5">
+  <%= event_form %>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      <h1 class="text-success mr-2 hi_title">Upcoming Events:</h1>
+      <div class="results-column d-flex flex-column p-2">
+         <% @upcoming_events.each do |event| %>
+           <div class="p-3 mb-1" style="background-color:lavender;">
+             <div class="d-flex justify-content-between">
+               <h4 class="text-dark"><%= link_to "#{event.title}", event, class: "text-dark" %></h4>
+          <div class="text-info"><%= event.event_date %></div>
+        </div>
+        <div><%= event.description %></div>
+        <%= button(event) %>
+      </div>
+    <% end %>
+  </div></div>
+      <div class="col">
+      <h1 class="text-danger hi_title">Previous Events:</h1>
+  <div class="results-column d-flex flex-column p-2">
+    <% @previous_events.each do |event| %>
+      <div class="p-3 mb-1" style="background-color:lavender;">
+        <div class="d-flex justify-content-between">
+          <h4 class="text-dark"><%= link_to "#{event.title}", event, class: "text-dark" %></h4>
+          <div class="text-info"><%= event.event_date %></div>
+        </div>
+        <div><%= event.description %></div>
+        <%= button(event) %>
+      </div>
+    <% end %>
+  </div>
+  </div>
+    </div>
+  </div>
+  
+</div>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Attendee:</strong>
+  <%= @event_attendance.attendee_id %>
+</p>
+
+<p>
+  <strong>Evnt attended:</strong>
+  <%= @event_attendance.evnt_attended_id %>
+</p>
+
+<%= link_to 'Edit', edit_event_attendance_path(@event_attendance) %> |
+<%= link_to 'Back', event_attendances_path %>

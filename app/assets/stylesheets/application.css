@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+.hi_title {
+  text-shadow: 0 1px 1px #4d4d4d;
+  color: #222;
+  font-size: 40px;
+}
+
+.mlogo {
+  background: none;
+  border: none;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 1.4px;
+  color: #7cfc00;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+}
+
+.form-input {
+  max-width: 50%;
+}
+
+.form-i-2 {
+  margin-top: 50px;
+}
+
+.inputbox,
+.input-field {
+  width: 100%;
+}
+
+.login-title {
+  display: flex;
+}

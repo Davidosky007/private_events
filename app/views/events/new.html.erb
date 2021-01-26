@@ -1,0 +1,9 @@
+<% if logged_in? %>
+<h1>New Event</h1>
+
+<%= render 'form', event: @event %>
+
+<%= link_to 'Back', events_path %>
+<% else %>
+<%= flash[:notice] = "You have to Login Or Sign Up" %>
+<% end %>

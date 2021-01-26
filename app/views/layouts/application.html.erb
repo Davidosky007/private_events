@@ -1,16 +1,19 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
   <head>
     <title>PrivateEvents</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' %>
   </head>
-
   <body>
+    <nav class="navbar bg-primary d-flex justify-content-between align-items-center">
+      <button class="mlogo" onclick="location.href = '../home';">PrivateEvents</button>
+      <%= nav_buttons %>
+    </nav>
     <%= yield %>
   </body>
 </html>

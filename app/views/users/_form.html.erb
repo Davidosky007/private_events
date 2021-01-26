@@ -1,0 +1,25 @@
+<div class="container d-flex justify-content-center">
+<%= form_for @user, :validate => true, :html => {:class => "form-input"} do |f| %>
+  <ul>
+    <% @user.errors.full_messages.each do |error| %>
+      <li class="errors"><%= error %></li>
+    <% end %>
+  </ul>
+  <div class="input-field">
+    <div class="labels">
+      <label class="form-label">Name :</label>
+    </div>
+    <div><%= f.text_field :name, :placeholder =>  'enter name', :class => "inputbox" %></div>
+  </div>
+  <div class="input-field">
+    <div class="labels">
+      <label class="form-label mt-2 mb-2">Username :</label>
+    </div>
+    <div><%= f.text_field :username, :placeholder =>  'enter username',:class => "inputbox" %></div>
+  </div>
+  <div>
+    <%= f.submit("Submit", :class => "btn btn-secondary btn-block mb-3 mt-3") %>
+  </div>
+  <button type="button" onclick="location.href = 'login';" class="btn btn-success btn-block mb-3" >Login</button>
+<% end %>
+</div>

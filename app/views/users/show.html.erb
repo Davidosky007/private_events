@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+  
+  <div>
+    <div class="row">
+
+    <div class="col">
+    <h2 class="text-primary">Events Attending</h2>
+    <div class="results-column d-flex flex-column p-3">
+    <% @attended_events.each do |event| %>
+      <div class="bg-light p-2 mb-2" >
+        <div class="d-flex justify-content-between">
+          <h4 class="text-secondary"><%= event.title %></h4>
+          <div class="text-success"><%= event.event_date %></div>
+        </div>
+        <div><%= event.description %></div>
+      </div>
+    <% end %>
+  </div>
+    </div>
+    
+    <div class="col">
+    <h2 class="text-success"> Created Events </h2>
+    <br>
+    <h4>Upcoming events</h4>
+    <div class="results-column d-flex flex-column p-3">
+      <% @upcoming_events.each do |event| %>
+        <div class="bg-light p-2 mb-2" >
+          <div class="d-flex justify-content-between">
+            <h4><%= link_to "#{event.title}", event, class: "text-secondary" %></h4>
+            <div class="text-success"><%= event.event_date %></div>
+          </div>
+          <div><%= event.description %></div>
+        </div>
+      <% end %>
+    </div>
+    <h4>Previous events</h4>
+    <div class="results-column d-flex flex-column p-3">
+      <% @previous_events.each do |event| %>
+        <div class="bg-light p-2 mb-2" >
+          <div class="d-flex justify-content-between">
+            <h4><%= link_to "#{event.title}", event, class: "text-secondary" %></h4>
+            <div class="text-success"><%= event.event_date %></div>
+          </div>
+          <div><%= event.description %></div>
+        </div>
+      <% end %>
+    </div>
+
+    </div>
+
+    </div>
+    
+  </div>
+  <button onclick="location.href = '../users';" class="btn btn-success" >Back</button>

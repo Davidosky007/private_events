@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="results-column d-flex flex-column p-5 w-50 m-auto">
+      <div class="bg-light p-4 mb-2" >
+        <div class="d-flex justify-content-between">
+          <h4 class="text-secondary"><%= @event.title %></h4>
+          <div class="text-success"><%= @event.event_date %></div>
+        </div>
+        <div><%= @event.description %></div>
+      </div>
+  </div>
+  <div class="results-column d-flex flex-column p-2 w-50 m-auto text-center">
+    <p id="notice"><%= notice %></p>
+  <h1>List of attendees</h1>
+  <table >
+    <thead>
+      <tr>
+        <th> <u> Name </u> </th>
+        <th colspan="1"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @event.attendees.each do |attendee| %>
+        <tr>
+          <td><%= attendee.name %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= link_to 'Back', root_path, class: 'p-3' %>
+  </div>
+</div>
